@@ -15,7 +15,7 @@ namespace BejegyzesProjekt
         private DateTime letrejott;
         private DateTime szerkesztve;
 
-        public Bejegyzes(string szerzo, string tartalom, int likeok, DateTime letrejott, DateTime szerkesztve)
+        public Bejegyzes(string szerzo, string tartalom)
         {
             this.szerzo = szerzo;
             this.tartalom = tartalom;
@@ -37,7 +37,7 @@ namespace BejegyzesProjekt
 
         public override string ToString()
         {
-            return $"{this.szerzo}-{this.likeok}-{this.letrejott}\nSzerkesztve: {this.szerkesztve}\n{this.tartalom}";
+            return $"{this.szerzo}-{this.likeok}-{this.letrejott}\nSzerkesztve: {this.szerkesztve}\n{this.tartalom}\n";
         }
     }
 }
